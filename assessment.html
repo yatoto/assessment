@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja"> //言語指定
+<head>
+    <meta charset="UTF-8"> //文字コード
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>あなたのいいところ診断</title> //タイトル
+    <link rel="stylesheet" href="assessment.css"> //参照するcssシート
+</head>
+<body>
+    <h1>あなたのいいところは？</h1>
+    <p>診断したい名前を入れてください</p> //段落
+    <input type="text" id="user-name" size="40" maxlength="20"> //テキスト、属性、サイズ指定
+    <button id="assessment">診断する</button> //ボタン
+    <div id = "result-area"></div> //結果表示
+    <div id = "tweet-area">
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div> //ツイートボタン
+    <script src="assessment.js"></script> //JSスクリプト
+</body>
+</html>
